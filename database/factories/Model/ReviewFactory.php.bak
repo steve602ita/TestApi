@@ -25,7 +25,7 @@ class ReviewFactory extends Factory
     {
         return [
             'product_id' => function(){
-				return Product::all()->random();
+				return ProductFactory::all()->random();
 			},
 			'customer' => $this->faker->name,
 			'review' => $this->faker->paragraph,
