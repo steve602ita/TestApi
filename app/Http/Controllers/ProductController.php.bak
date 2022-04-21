@@ -48,7 +48,7 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        //return $product;  vediamo output del link http://localhost:8000/api/products/4
+        return $product;  //vediamo output del link http://localhost:8000/api/products/4
 		return new ProductResource($product);
     }
 
